@@ -1,0 +1,284 @@
+@import url('https://fonts.google.com/specimen/Lato?');
+
+body{
+    background-color:antiquewhite;
+    font-size:1.2rem;
+    line-height: 1.4em;
+}
+
+*{ 
+    box-sizing: content-box;
+    margin: auto;
+    scroll-behavior:smooth
+}
+
+p{
+    margin-bottom: 1,em;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover{
+    color: rgba(238, 41, 34, 0.267);
+}
+
+main{
+    max-width: max-content;
+    margin-top: auto;
+}
+
+header { 
+    background: antiquewhite;
+    color:#000000;
+
+    position:fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+footer{ 
+    background-color: #af5993;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.encabezado {
+        height: 90px;
+        font-family: 'Lato', sans-serif;
+        display: flex;
+        align-items: center;
+    }
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.menu-icon{ 
+    display: none;
+    font-family: 'Lato', sans-serif;
+}
+    .navigation ul {
+    margin: 0;
+    padding: 0;
+}
+
+        .navigation ul li {
+        display: inline-block;
+    }
+
+    .navigation ul li a {
+        display: block;
+        padding: 0.5rem 1rem;
+        transition: all 0.5s linear;
+        border-radius: 10px;
+
+    }
+    .navigation ul li a:hover{
+        background:#eee3ec;
+    }
+
+    .fotoEdra {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px;
+
+    }
+    .saludo{
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    color: black;
+    }
+h1{
+    text-align: center;
+}
+
+.tamaño-img{
+        width: 200px; ;
+        height: 200px;
+        border-radius: 100px;
+    }
+
+.tamaño{
+        width: 50px;
+        height: 30px;
+        margin: 10px;
+        padding: 5px;
+    }
+.tamaño-imagen{
+        width: 150px; ;
+        border-radius: 0%;
+}
+
+.Hablemos
+{
+    background-color: rgba(175,89,158, 0.3);
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #0f0f0f;
+    margin: 10px;
+    border: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    justify-content: center;
+}
+
+.redes{
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-size: 90px;
+    color: black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+   }
+
+h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+.saludo{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.boton-descarga{
+    background-color: #af599e;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #fbfbfb;
+    margin: 10px;
+    border: 10px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.boton-inicio{
+    padding: 10px;
+    margin: 20px;
+    border: 10px;
+}
+.boton-contacto{
+    padding: 10px;
+    margin: 20;
+    border: 10px;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+}
+
+@media  (min-width: 601px) and (max-width: 1024px){
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav {
+        margin-top: 10px;
+    }
+
+    h2{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size:20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    footer {
+        color:black;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .navigation{
+        width: 100%;
+        margin-top:1 rem;
+    }
+        .navigation ul{
+            display: none;
+    }
+
+        .navigation ul.show{
+        display: block;
+}
+        .navigation ul li{
+            display: block; 
+    }
+
+            .navigation ul li a{
+                display: block; 
+                padding:0.5rem 0;
+                transform: all 0.4s linear;
+                border-radius: 5px;
+    }
+ 
+    .tamaño-imagen{
+        width: 80px; ;
+        border-radius: 0%;
+    }
+    
+    header {
+        justify-content: space-between;
+    }
+    
+    section {
+        padding: 40px;
+    }
+
+    h2{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    footer {
+        color: aqua;
+    }
+  
+
+}
+
